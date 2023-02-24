@@ -68,7 +68,7 @@ class PaymentController {
       }),
       mode: 'payment',
       customer: customer.id,
-      success_url: `${envConfig.CLIENT_URL}/user?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${envConfig.CLIENT_URL}/orders?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: envConfig.CLIENT_URL + '/cart',
     });
 
